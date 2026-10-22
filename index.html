@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive navigation menu built with HTML, CSS and JavaScript.">
+    <title>Dynamic Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo" aria-label="Forma home">
+            <span class="logo-mark">F</span> forma<span class="logo-dot">.</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation" id="primary-navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-cta">Let's talk <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="status-dot"></span> DESIGN THAT MOVES YOU FORWARD</p>
+                <h1>Ideas into<br> <span>experiences.</span></h1>
+                <p class="hero-description">
+                    Thoughtful digital experiences begin with simple ideas
+                    and grow into something extraordinary.
+                </p>
+                <div class="hero-actions">
+                    <a href="#services" class="button button-primary">Explore what we do <span>↗</span></a>
+                    <a href="#about" class="text-link">Discover our approach ↓</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="visual-card">
+                    <span class="visual-number">01</span>
+                    <div class="visual-symbol">✳</div>
+                    <p>Good design<br>makes things<br><strong>feel simple.</strong></p>
+                    <span class="visual-caption">CREATIVE STUDIO · EST. 2026</span>
+                </div>
+                <div class="floating-tag">✦ Built with purpose</div>
+            </div>
+            <div class="hero-footer">
+                <span>INDEPENDENT THINKING. INTENTIONAL DESIGN.</span>
+                <a href="#about">SCROLL TO EXPLORE ↓</a>
+            </div>
+        </section>
+
+        <section class="content-section" id="about">
+            <p class="eyebrow">01 / ABOUT</p>
+            <h2>Clarity creates<br><span>possibility.</span></h2>
+            <p>We believe the best digital experiences are easy to understand, enjoyable to use, and built around people.</p>
+        </section>
+
+        <section class="content-section alternate" id="services">
+            <p class="eyebrow">02 / SERVICES</p>
+            <h2>Thoughtful work.<br><span>Meaningful impact.</span></h2>
+            <div class="service-list">
+                <article><span>01</span><h3>Digital experiences</h3><p>Clear, engaging interfaces designed for people.</p></article>
+                <article><span>02</span><h3>Responsive design</h3><p>Consistent experiences across phones and computers.</p></article>
+                <article><span>03</span><h3>Interactive systems</h3><p>Useful interactions that make websites feel alive.</p></article>
+            </div>
+        </section>
+
+        <section class="content-section contact-section" id="contact">
+            <p class="eyebrow">03 / CONTACT</p>
+            <h2>Have an idea?<br><span>Let's begin.</span></h2>
+            <a href="mailto:hello@example.com" class="button button-primary">Get in touch ↗</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">forma<span class="logo-dot">.</span></a>
+        <p>Designed with intention · 2026</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>
